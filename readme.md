@@ -17,10 +17,7 @@ Automatic colorization of grayscale images using **Conditional Diffusion Models*
     <td><img src="Samples/grayscale/1.png" width="300"/></td>
     <td><img src="Samples/colorized/1.png" width="300"/></td>
   </tr>
-  <tr>
-    <td><img src="Samples/grayscale/2.png" width="300"/></td>
-    <td><img src="Samples/colorized/2.png" width="300"/></td>
-  </tr>
+
   <tr>
     <td><img src="Samples/grayscale/3.jpg" width="300"/></td>
     <td><img src="Samples/colorized/3.png" width="300"/></td>
