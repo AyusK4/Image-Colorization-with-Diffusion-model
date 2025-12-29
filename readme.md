@@ -36,7 +36,7 @@ Automatic colorization of grayscale images using **Conditional Diffusion Models*
 ## 🚀 Features
 
 - **Conditional Diffusion Model** for image colorization
-- **UNet2DModel** with attention blocks (96M+ parameters)
+- **UNet2DModel** with attention blocks 
 - **LAB Color Space** processing for better perceptual quality
 - **Mixed Precision Training** (FP16) for memory efficiency
 - **Multi-GPU Support** with DataParallel
@@ -71,11 +71,6 @@ Image-Colorization/
 │   ├── image-colorization.ipynb    # Main training notebook
 │   ├── Inference.ipynb             # Inference notebook
 │   └── ...                          # Other experimental notebooks
-├── src/
-│   ├── preprocessing.py             # Data preprocessing scripts
-│   ├── train_diffusion.py           # Diffusion training code
-│   ├── train_unet_gan.py            # Alternative GAN approach
-│   └── evaluation.py                # Evaluation metrics
 ├── Samples/
 │   ├── grayscale/                   # Sample input images
 │   └── colorized/                   # Sample output images
@@ -126,32 +121,9 @@ pip install -r requirements.txt
 jupyter notebook notebooks/image-colorization.ipynb
 ```
 
-**Key Features:**
-- Automatic checkpoint saving every 300 steps
-- Validation every epoch
-- Mixed precision training (FP16)
-- Emergency checkpoint on interruption
-- Training curves and metrics logging
 
----
 
-## 🔮 Inference
 
-Use the pre-trained model to colorize your own images:
-
-```bash
-jupyter notebook notebooks/Inference.ipynb
-```
-
-Or use the Python script:
-```python
-from src.preprocessing import load_model, colorize_image
-
-model = load_model('path/to/checkpoint.pth')
-colorized = colorize_image(model, 'grayscale_image.jpg')
-```
-
----
 
 ## 📈 Training Metrics
 
@@ -161,9 +133,7 @@ The model tracks:
 - **Learning Rate Schedule**
 - **Epoch Time**
 
-All metrics are logged to `training_history.json` and visualized in training curves.
 
----
 
 ## 🛠️ Technical Details
 
@@ -183,7 +153,7 @@ The model predicts **AB channels** conditioned on the **L channel**, then conver
 
 ## 📊 Dataset
 
-- **Training**: Preprocessed LAB images stored in HDF5 format
+- **Training**: Preprocessed (COCO 2017 Dataset) LAB images stored in HDF5 format
 - **Format**: `(N, 128, 128, 3)` float16 arrays
 - **Normalization**: L ∈ [0,100], A,B ∈ [-128,127]
 
