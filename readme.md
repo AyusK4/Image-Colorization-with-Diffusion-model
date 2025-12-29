@@ -168,16 +168,9 @@ Contributions are welcome! Feel free to:
 
 ---
 
-## �‍💻 Author
 
-**Ayush KC**  
-GitHub: [@AyusK4](https://github.com/AyusK4)
 
-**Note:** This is a personal project for learning and experimentation.
-
----
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Diffusers Library** by Hugging Face
 - **DDPM Paper**: Denoising Diffusion Probabilistic Models
@@ -185,6 +178,3 @@ GitHub: [@AyusK4](https://github.com/AyusK4)
 
 ---
 
-## 📧 Contact
-
-For questions or collaborations, reach out via GitHub Issues.
