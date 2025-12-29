@@ -1,0 +1,51 @@
+# Exclude all .md files except readme.md
+*.md
+!readme.md
+!README.md
+PROJECT_METHODOLOGY_REPORT.txt
+# Exclude data files
+*.h5
+val.h5
+state.db
+training_metrics.json
+
+# Exclude temporary output folders (keep Samples only)
+outputs/
+gryascale/
+inference_results/
+Samples/outputs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+colorization_logs*/
+colorization_checkpoints*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model checkpoints (large files)
+*.pth
+*.ckpt
