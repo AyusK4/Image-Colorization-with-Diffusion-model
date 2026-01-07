@@ -9,6 +9,11 @@ val.h5
 state.db
 training_metrics.json
 
+# Graphs folder - exclude data/plots, keep scripts
+graphs/plots/
+graphs/*.json
+graphs/*.txt
+
 # Exclude temporary output folders (keep Samples only)
 outputs/
 gryascale/
